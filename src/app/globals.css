@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-section {
+  position: absolute ;
+  left: -15vw;
+ top: -110vh;
+  height: 200vh; /* Set your desired height */
+  width: 200vw;
+  background-image: radial-gradient(circle 400px, rgba(247, 247, 247, 0.096),rgba(17, 17, 17, 0.37), rgb(15, 15, 15));
+  background-position: calc(100% - 100px) 2500px; /* Positioning the gradient */
+    background-size: cover;
+}
+.hero-section1 {
+  background-image: radial-gradient(rgba(247, 247, 247, 0), rgba(5, 5, 5, 0.781), rgb(0, 0, 0));
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #858484;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c2c2c;
+}
