@@ -26,7 +26,7 @@ export default function LoginPageLayout(){
                 <div className=" w-[90%] lg:w-[50%] h-full p-3 flex flex-col items-center justify-center gap-10">
                     <div className=" flex flex-col items-start w-[70%] leading-9">
                         <h1 className=" tracking-wider text-[2.5rem] font-[500]">Welcome to </h1>
-                        <p className=" tracking-wide text-emerald-600 text-[1.8rem] font-[500]">Cardicare Heart Care Hospital</p>
+                        <p className=" tracking-wide text-emerald-600 text-[1.8rem] font-[500]">Cardicare Heart Care Clinic</p>
                         </div> 
                     <div className=" w-[70%] ">
                         <form className=" w-full h-full flex flex-col gap-6 items-center" onSubmit={(e)=>{e.preventDefault();HandelLogin()}}>

@@ -25,7 +25,7 @@ export default function FooterSection(){
                     <div className=" flex items-center gap-2">
                         <Image src={logo} alt="logo" priority  className="w-[16rem] "/>
                     </div>
-                    <p className=" w-[100%] md:w-[80%] mt-3 text-[1rem] text-zinc-300 tracking-wider pl-0  leading-5">At Cardicare Hospital, we are dedicated to your heart health, offering advanced treatments and compassionate care to transform lives. Since 2010, we have been a trusted partner in cardiovascular wellness, blending innovation with a patient-first approach. Visit us to experience world-class care tailored to your needs. Your journey to better heart health starts here. Together, let’s create a healthier tomorrow, one heartbeat at a time</p>
+                    <p className=" w-[100%] md:w-[80%] mt-3 text-[1rem] text-zinc-300 tracking-wider pl-0  leading-5">At Cardicare Clinic, we are dedicated to your heart health, offering advanced treatments and compassionate care to transform lives. Since 2001, we have been a trusted partner in cardiovascular wellness, blending innovation with a patient-first approach. Visit us to experience world-class care tailored to your needs. Your journey to better heart health starts here. Together, let’s create a healthier tomorrow, one heartbeat at a time</p>
                     <div className=" py-10 flex flex-col gap-2 pl-[10%]">
                         <div className=" text-[1.4rem] font-[500] text-transparent bg-clip-text bg-gradient-to-r from-zinc-200 via-sky-700 to-zinc-600 flex items-center group hover:underline underline-offset-1 gap-1 "> <MdAddLocationAlt className=" text-zinc-100 text-[1.4rem] mb-1"/><span className=" group-hover:text-orange-400 duration-300 cursor-pointer">Our Address</span></div>
                         <div className=" pl-[6%] space-y-4">
@@ -43,11 +43,11 @@ export default function FooterSection(){
                     <div className=" pl-[3%] md:pl-[5%] pt-4 text-zinc-300">
                         <div className=" flex px-8 items-center gap-2 text-[1.2rem] ">
                                                     <MdAttachEmail className=" shrink-0 text-[1.4rem] text-sky-700"/>
-                                                    <Link href={`mailto:admin@techtoniccorporate.com`}><p className="  hover:underline underline-offset-2  ">admin@techtoniccorporate.com</p></Link>
+                                                    <Link href={`mailto:cardicareheartcare@gmail.com`}><p className="  hover:underline underline-offset-2  ">cardicareheartcare@gmail.com</p></Link>
                                                 </div>
                                                 <div className=" flex px-8 items-center gap-2 text-[1.2rem] ">
                                                     <PiPhoneCallFill className=" text-[1.4rem] text-sky-700"/>
-                                                    <Link href={`tel:admin@techtoniccorporate.com`}><p className=" ">0712-2554488</p></Link>
+                                                    <Link href={`tel:0712-2554488`}><p className=" ">0712-2554488</p></Link>
                                                 </div>
                     </div>
                     

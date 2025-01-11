@@ -136,46 +136,89 @@ export default function ServicesSectionEachCard() {
     const descriptionElements = descriptions.current.filter(Boolean);
     const questionElements = questionSets.current.filter(Boolean);
 
-    // Create timeline
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: section,
-        start: "top 10%",
-        end: "+=500%",
-        pin: true,
-        scrub: 1,
+    // Hide all sections except the first one
+    gsap.set([
+      headingElements.slice(1),
+      descriptionElements.slice(1),
+      questionElements.slice(1)
+    ], { opacity: 0, display: 'none' });
+
+    // Create a timeline for each content transition
+    contentData.forEach((_, index) => {
+      if (index < contentData.length - 1) {
+        const currentElements = [
+          headingElements[index],
+          descriptionElements[index],
+          questionElements[index]
+        ];
+
+        const nextElements = [
+          headingElements[index + 1],
+          descriptionElements[index + 1],
+          questionElements[index + 1]
+        ];
+
+        // Create individual ScrollTrigger for each transition
+        ScrollTrigger.create({
+          trigger: section,
+          start: `${index * 100}% top`,
+          end: `${(index + 1) * 100}% top`,
+          onEnter: () => {
+            // Show next section and animate transition
+            gsap.set(nextElements, { display: 'block' });
+            gsap.timeline()
+              .to(currentElements, {
+                opacity: 0,
+                y: -50,
+                duration: 0.5,
+                stagger: 0.1,
+                ease: "power2.out"
+              })
+              .to(nextElements, {
+                opacity: 1,
+                y: 0,
+                duration: 0.5,
+                stagger: 0.1,
+                ease: "power2.in"
+              }, "-=0.3");
+          },
+          onLeaveBack: () => {
+            // Reverse animation when scrolling back up
+            gsap.timeline()
+              .to(nextElements, {
+                opacity: 0,
+                y: 50,
+                duration: 0.5,
+                stagger: 0.1,
+                ease: "power2.out",
+                onComplete: () => gsap.set(nextElements, { display: 'none' })
+              })
+              .to(currentElements, {
+                opacity: 1,
+                y: 0,
+                duration: 0.5,
+                stagger: 0.1,
+                ease: "power2.in"
+              }, "-=0.3");
+          }
+        });
       }
     });
 
-    // Set initial states
-    gsap.set(headingElements.slice(1), { opacity: 0, y: 50 });
-    gsap.set(descriptionElements.slice(1), { opacity: 0, y: 30 });
-    gsap.set(questionElements.slice(1), { opacity: 0, y: 30 });
-
-    // Animate each section
-    for (let i = 0; i < headingElements.length - 1; i++) {
-      // Fade out current section
-      tl.to([headingElements[i], descriptionElements[i], questionElements[i]], {
-        opacity: 0,
-        y: -30,
-        duration: 0.5,
-        stagger: 0.1
-      })
-      // Fade in next section
-      .to([headingElements[i + 1], descriptionElements[i + 1], questionElements[i + 1]], {
-        opacity: 1,
-        y: 0,
-        duration: 0.5,
-        stagger: 0.1
-      }, "-=0.3");
-    }
+    // Main ScrollTrigger for the container
+    ScrollTrigger.create({
+      trigger: section,
+      start: "top top",
+      end: `+=${(contentData.length - 1) * 100}%`,
+      pin: true,
+      pinSpacing: true,
+      scrub: 1
+    });
 
     return () => {
-      if (tl) tl.kill();
       ScrollTrigger.getAll().forEach(st => st.kill());
     };
   }, []);
-
   return (
     <div ref={serviceContainer} className="w-screen min-h-screen  py-10 px-6 overflow-hidden">
       <div className="relative min-h-[200px]">

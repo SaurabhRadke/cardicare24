@@ -1,5 +1,5 @@
 export default function ContactUs(){
     return(
-        <div>COntact US us</div>
+        <div>COntact US</div>
     )
 }

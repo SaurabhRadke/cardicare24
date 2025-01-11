@@ -9,7 +9,7 @@ const jost = Jost({
 });
 
 export const metadata = {
-  title: "CardiCare Heart Hospital",
+  title: "CardiCare Heart Clinic",
   description: "Comprehensive cardiovascular care with advanced treatments and personalized care plans.",
 };
 

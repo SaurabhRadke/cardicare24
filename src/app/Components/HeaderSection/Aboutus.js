@@ -96,14 +96,14 @@ export default function AboutUs() {
             <div className=" w-[95%] md:w-[60%] h-[95%] aboutleft">
               <div className="w-full h-full md:py-4 flex flex-col items-center gap-10">
                 <h1 className="text-[1.3rem] lg:text-[1.8rem] text-center text-red-600 w-[90%] md:w-[70%] tracking-wider font-[500]">
-                  Welcome to CardiCare Heart Hospital
+                  Welcome to CardiCare Heart Clinic
                 </h1>
                 <div className="w-full tracking-wider  md:w-[80%] items-center flex justify-center flex-col text-[1rem] text-emerald-950 font-[500] lg:text-[1.2rem] text-center gap-10">
                   <p>
-                    Welcome to CardiCare Heart Hospital, where we provide top-quality care for cardiovascular conditions. Our expert team and advanced facility ensure the best possible treatment for every patient. We understand that surgery can be overwhelming, so we offer non-surgical treatments like Enhanced External Counterpulsation (EECP) and Chelation Therapy, along with a full range of diagnostic, minimally invasive, and surgical options tailored to individual needs.
+                    Welcome to CardiCare Heart Clinic, where we provide top-quality care for cardiovascular conditions. Our expert team and advanced facility ensure the best possible treatment for every patient. We understand that surgery can be overwhelming, so we offer non-surgical treatments like Enhanced External Counterpulsation (EECP) and Chelation Therapy, along with a full range of diagnostic, minimally invasive, and surgical options tailored to individual needs.
                   </p>
                   <p>
-                    Thank you for considering CardiCare Heart Hospital. Please contact us to learn more or to schedule an appointment with one of our skilled medical professionals
+                    Thank you for considering CardiCare Heart Clinic. Please contact us to learn more or to schedule an appointment with one of our skilled medical professionals
                   </p>
                 </div>
                 <button className="px-8 py-2 text-[1.2rem] bg-zinc-100 text-zinc-900 tracking-wider font-[500] rounded-md mt-4 flex items-center gap-3 border-[0.0001rem] border-zinc-100 hover:bg-zinc-800 hover:text-zinc-100 hover:border-zinc-800 duration-700">

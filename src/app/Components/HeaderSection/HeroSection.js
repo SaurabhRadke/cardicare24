@@ -86,11 +86,11 @@ export default function HeroSection() {
                         <span className="subhead inline-block">at</span>{' '}
                         <span className="subhead inline-block text-red-600">CardiCare</span>{' '}
                         <span className="subhead inline-block">Heart</span>{' '}
-                        <span className="subhead inline-block">Hospital</span>
+                        <span className="subhead inline-block">Clinic</span>
                     </h1>
                     
                     <p style={{mixBlendMode: "difference"}} className="subheadsub py-8 content text-[1rem] md:text-[1.25rem] font-[400] mt-1 tracking-wider w-[90%] md:w-[70%] text-center">
-                        CardiCare Heart Hospital provides top-quality cardiovascular care with personalized treatment plans. Our advanced facility offers non-surgical options like EECP and Chelation Therapy, as well as diagnostic imaging, minimally invasive procedures, and surgical interventions. Contact us to learn more or schedule an appointment
+                        CardiCare Heart Clinic provides top-quality cardiovascular care with personalized treatment plans. Our advanced facility offers non-surgical options like EECP and Chelation Therapy, as well as diagnostic imaging, minimally invasive procedures, and surgical interventions. Contact us to learn more or schedule an appointment
                     </p>
 
                     <div className="content pt-6 subheadbutton">
