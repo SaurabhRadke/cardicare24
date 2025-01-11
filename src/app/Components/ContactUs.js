@@ -53,8 +53,8 @@ export default function ContactUsDetails() {
             <h1 className="text-[3rem] text-center leading-[2.7rem] font-semibold tracking-wider mt-10">Your Heart Health is Our Priority</h1>
             <div className="w-full min-h-screen py-5 flex md:flex-row flex-col gap-4">
                 <div className="w-[100%] md:w-[50%] h-full py-4 pl-[5%]">
-                    <h1 className="text-[2rem] md:text-[3rem] font-[500] tracking-wide leading-7">We're Here for Your Heart</h1>
-                    <p className="text-[1rem] md:text-[1.2rem] text-zinc-700 w-[95%] leading-6 mt-8 text-center md:w-[80%]">Connect with Cardicare Clinic for comprehensive cardiovascular care. From advanced treatments like EECP to preventive care and diagnostics, we're committed to supporting your heart health journey.</p>
+                    <h1 className="text-[2rem] md:text-[3rem] font-[500] tracking-wide leading-7">We&lsquo;re Here for Your Heart</h1>
+                    <p className="text-[1rem] md:text-[1.2rem] text-zinc-700 w-[95%] leading-6 mt-8 text-center md:w-[80%]">Connect with Cardicare Clinic for comprehensive cardiovascular care. From advanced treatments like EECP to preventive care and diagnostics, we&lsquo;re committed to supporting your heart health journey.</p>
                     <div className="w-[70%] mt-10 h-auto">
                         <div className="flex px-4 md:px-8 items-center gap-2 text-[1.4rem]">
                             <MdAttachEmail className="text-[1.6rem] text-sky-700 shrink-0"/>
@@ -75,7 +75,7 @@ export default function ContactUsDetails() {
                                     </div>
                                     Patient Support
                                 </div>
-                                <p className="px-3">Need information about our cardiovascular treatments? Our medical team is here to assist with EECP, Chelation Therapy, or any other cardiac care services you're interested in.</p>
+                                <p className="px-3">Need information about our cardiovascular treatments? Our medical team is here to assist with EECP, Chelation Therapy, or any other cardiac care services you&lsquo;re interested in.</p>
                             </div>
                             <div className="w-[22rem] h-[16rem] rounded-lg p-4 flex flex-col gap-3 bg-black text-zinc-100">
                                 <div className="text-[1.5rem] font-[500] flex items-center gap-2 text-orange-400">
