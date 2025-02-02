@@ -66,17 +66,7 @@ export default function HeaderSection(){
       </div>
       <div className="flex items-center gap-1 md:gap-4">
         <ButtonComponent text={"Login"}/>
-        {/* <button 
-          className="px-5 py-[0.3rem] rounded-md bg-emerald-800 tracking-widest font-[500] hover:bg-transparent hover:text-emerald-600 border-[0.001rem] hover:border-emerald-600 border-emerald-800 duration-500 text-[0.9rem] text-zinc-100"
-          onClick={() => supabaseContext.setLoginPage(true)}
-        >
-          Login
-        </button> */}
-        {/* <div
-          className={`w-9 h-9 flex justify-center items-center  cursor-pointer duration-500 rounded-full`}
-        >
-          {supabaseContext.dark ? <IoSunny className="text-[1.4rem]" /> : <BsFillMoonStarsFill className="text-[1.2rem]" />}
-        </div> */}
+        
         <div 
           className="text-[1.5rem] lg:hidden text-zinc-300 w-10 h-10 rounded-full hover:text-zinc-100 hover:bg-emerald-700 grid place-items-center duration-500 cursor-pointer"
           onClick={() => supabaseContext.setSidebar(true)}
